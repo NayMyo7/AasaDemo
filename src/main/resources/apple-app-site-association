@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "22AY7DRGTH.com.waishantestapp.universallink",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
