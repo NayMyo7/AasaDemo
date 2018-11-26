@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "22AY7DRGTH.com.xan.retailperformance",
-                "paths": [ "/users" ]
+                "paths": [ "/users","/users/password" ]
             }
         ]
     }
