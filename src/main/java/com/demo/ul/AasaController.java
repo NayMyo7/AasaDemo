@@ -16,9 +16,18 @@ public class AasaController {
 	@Autowired
 	private ResourceLoader resourceLoader;
 
-	@GetMapping("/apple-app-site-association")
+	@GetMapping("/.well- known/apple-app-site-association")
 	public ResponseEntity<Resource> getAASA() throws IOException {
 		Resource res = resourceLoader.getResource("classpath:apple-app-site-association");
+		return ResponseEntity.ok()
+				.contentLength(res.contentLength())
+				.contentType(MediaType.APPLICATION_JSON)
+				.body(res);
+	}
+	
+	@GetMapping("/.well- known/assetlinks.json")
+	public ResponseEntity<Resource> getDAL() throws IOException {
+		Resource res = resourceLoader.getResource("classpath:assetlinks.json");
 		return ResponseEntity.ok()
 				.contentLength(res.contentLength())
 				.contentType(MediaType.APPLICATION_JSON)

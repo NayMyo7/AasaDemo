@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.retailperformance.record.retailperformancerecord",
+    "sha256_cert_fingerprints":
+    ["3E:E9:AD:8A:3A:E1:9E:99:B9:C8:B9:4C:FF:F4:16:20:F6:5B:DD:F3:1E:C3:EF:AC:7C:E6:BB:6F:2B:B4:42:AA"]
+  }
+}]
